@@ -13,15 +13,23 @@ async function Header() {
   return (
     <header className="container mx-auto">
       <nav className="py-6 px-4 flex justify-between items-center">
-        <Link href="/">
-          <Image
-            src={"/logo.png"}
-            alt="Reflct Logo"
-            width={200}
-            height={60}
-            className="h-10 w-auto object-contain"
-          />
-        </Link>
+     <Link href="/" className="flex items-center gap-3">
+  <div className="relative w-20 h-20">
+    <Image
+      src="/logo1.png"
+      alt="SnapBook Logo"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
+  <span className="text-xl font-semibold text-[#6D28D9] tracking-tighttext-2xl sm:text-3xl font-bold text-[#6D28D9] tracking-tight">
+    SnapBook
+  </span>
+</Link>
+
+
+
         <div className="flex items-center gap-4">
           <SignedIn>
             <Link href="/dashboard#collections">

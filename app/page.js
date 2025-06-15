@@ -50,11 +50,14 @@ export default async function LandingPage() {
     <div className="relative container mx-auto px-4 pt-16 pb-16">
       {/* Hero Section */}
       <div className="max-w-5xl mx-auto text-center space-y-8">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl gradient-title mb-6">
-          Your Space to Reflect. <br /> Your Story to Tell.
-        </h1>
+   <h1 className="hero-colored-title">
+  Your Space to SnapBook. <br /> Your Story to Tell.
+</h1>
+
+
+
         <p className="text-lg md:text-xl text-orange-800 mb-8">
-          Capture your thoughts, track your moods, and reflect on your journey
+          Capture your thoughts, track your moods, and Snap your journey
           in a beautiful, secure space.
         </p>
         <div className="relative">
@@ -147,18 +150,26 @@ export default async function LandingPage() {
               </li>
             </ul>
           </div>
-          <div className="space-y-4 bg-white rounded-2xl shadow-xl p-6 border border-orange-100">
-            {/* Editor Preview */}
-            <div className="flex gap-2 mb-6">
-              <div className="h-8 w-8 rounded bg-orange-100"></div>
-              <div className="h-8 w-8 rounded bg-orange-100"></div>
-              <div className="h-8 w-8 rounded bg-orange-100"></div>
-            </div>
-            <div className="h-4 bg-orange-50 rounded w-3/4"></div>
-            <div className="h-4 bg-orange-50 rounded w-full"></div>
-            <div className="h-4 bg-orange-50 rounded w-2/3"></div>
-            <div className="h-4 bg-orange-50 rounded w-1/3"></div>
-          </div>
+         <div className="space-y-4 bg-white/60 backdrop-blur-lg rounded-2xl shadow-xl p-6 border border-orange-200 transition-shadow duration-300 hover:shadow-2xl">
+  {/* Editor Toolbar Preview */}
+  <div className="flex gap-2 mb-6">
+    {[1, 2, 3].map((_, i) => (
+      <div
+        key={i}
+        className="h-8 w-8 rounded-lg bg-gradient-to-br from-orange-200 via-orange-100 to-orange-50 shadow-inner"
+      ></div>
+    ))}
+  </div>
+
+  {/* Editor Content Preview */}
+  <div className="space-y-3">
+    <div className="h-4 bg-gradient-to-r from-orange-100 to-pink-100 rounded-full w-3/4 animate-pulse"></div>
+    <div className="h-4 bg-gradient-to-r from-orange-100 to-yellow-100 rounded-full w-full animate-pulse"></div>
+    <div className="h-4 bg-gradient-to-r from-orange-100 to-green-100 rounded-full w-2/3 animate-pulse"></div>
+    <div className="h-4 bg-gradient-to-r from-orange-100 to-blue-100 rounded-full w-1/3 animate-pulse"></div>
+  </div>
+</div>
+
         </div>
 
         {/* Feature 2 */}
@@ -167,32 +178,43 @@ export default async function LandingPage() {
             <div className="h-12 w-12 bg-orange-100 rounded-full flex items-center justify-center">
               <BarChart2 className="h-6 w-6 text-orange-600" />
             </div>
-            <h3 className="text-2xl font-bold text-orange-900">
-              Mood Analytics
-            </h3>
-            <p className="text-lg text-orange-700">
-              Track your emotional journey with powerful analytics:
-            </p>
-            <ul className="space-y-3">
-              <li className="flex items-center gap-2">
-                <div className="h-2 w-2 rounded-full bg-orange-400" />
-                <span>Visual mood trends</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <div className="h-2 w-2 rounded-full bg-orange-400" />
-                <span>Pattern recognition</span>
-              </li>
-            </ul>
+           <h3 className="text-3xl font-extrabold text-orange-900 tracking-tight leading-tight">
+  Mood Analytics
+</h3>
+
+<p className="text-base md:text-lg text-orange-800 leading-relaxed">
+  Track your emotional journey with powerful, data-driven insights:
+</p>
+
+<ul className="space-y-3 text-orange-800 font-medium">
+  <li className="flex items-center gap-3">
+    <div className="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-orange-500 to-pink-400 shadow-sm" />
+    <span>Interactive mood visualizations</span>
+  </li>
+  <li className="flex items-center gap-3">
+    <div className="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-yellow-400 to-green-300 shadow-sm" />
+    <span>Personalized pattern recognition</span>
+  </li>
+</ul>
+
           </div>
-          <div className="space-y-4 bg-white rounded-2xl shadow-xl p-6 border border-orange-100 md:order-1">
-            {/* Analytics Preview */}
-            <div className="h-40 bg-gradient-to-t from-orange-100 to-orange-50 rounded-lg"></div>
-            <div className="flex justify-between">
-              <div className="h-4 w-16 bg-orange-100 rounded"></div>
-              <div className="h-4 w-16 bg-orange-100 rounded"></div>
-              <div className="h-4 w-16 bg-orange-100 rounded"></div>
-            </div>
-          </div>
+          <div className="space-y-6 bg-white/70 backdrop-blur-xl border border-orange-200 shadow-2xl rounded-3xl p-6 transition-shadow duration-300 hover:shadow-[0_20px_40px_rgba(255,146,0,0.2)] md:order-1">
+  {/* Analytics Chart Preview */}
+  <div className="h-44 rounded-xl bg-gradient-to-tr from-orange-100 via-orange-50 to-yellow-50 relative overflow-hidden">
+    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-200/30 to-transparent animate-pulse"></div>
+  </div>
+
+  {/* Labels or Stats */}
+  <div className="flex justify-between items-center gap-4">
+    {[1, 2, 3].map((_, i) => (
+      <div
+        key={i}
+        className="h-4 w-16 rounded-full bg-gradient-to-r from-orange-100 to-pink-100 animate-pulse"
+      ></div>
+    ))}
+  </div>
+</div>
+
         </div>
       </div>
 
@@ -200,7 +222,37 @@ export default async function LandingPage() {
       <TestimonialCarousel />
 
       {/* FAQ Section */}
-      <div className="mt-24">
+      <div className="mt-24 max-w-4xl mx-auto px-4">
+  <h2 className="text-4xl font-extrabold text-center text-orange-900 mb-8">
+    Frequently Asked Questions
+  </h2>
+  <p className="text-center text-orange-700 mb-12 text-lg">
+    Everything you need to know about the platform and how it works.
+  </p>
+  <div className="space-y-4">
+    <Accordion type="single" collapsible className="w-full">
+      {faqs.map((faq, index) => (
+        <AccordionItem
+          key={index}
+          value={`item-${index}`}
+          className="bg-white border border--100 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+        >
+          <AccordionTrigger className="text-left text-orange-900 text-lg font-medium px-6 py-4 hover:bg-orange-50 rounded-t-xl">
+            <span className="flex items-center gap-2">
+              <ChevronRight className="h-5 w-5 text-orange-600 transition-transform group-data-[state=open]:rotate-90" />
+              {faq.q}
+            </span>
+          </AccordionTrigger>
+          <AccordionContent className="text-orange-700 px-6 pb-6 pt-0 text-base leading-relaxed">
+            {faq.a}
+          </AccordionContent>
+        </AccordionItem>
+      ))}
+    </Accordion>
+  </div>
+</div>
+
+      {/* <div className="mt-24">
         <h2 className="text-3xl font-bold text-center text-orange-900 mb-12">
           Frequently Asked Questions
         </h2>
@@ -216,7 +268,7 @@ export default async function LandingPage() {
             </AccordionItem>
           ))}
         </Accordion>
-      </div>
+      </div> */}
 
       {/* CTA Section */}
       <div className="mt-24">
