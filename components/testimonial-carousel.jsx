@@ -42,7 +42,7 @@ import { Card, CardContent } from "./ui/card";
 //ye bhi component wale folder me ui wale folder me hai...
 //ye hai resuable card wala component joki testimonial box k liye hai
 
-
+import testimonials from "@/data/testimonials";
 
 const TestimonialCarousel = () => {
   return (
