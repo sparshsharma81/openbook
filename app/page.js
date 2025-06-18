@@ -240,17 +240,29 @@ export default async function LandingPage() {
 
       <div className="space-y-24 mt-24">
         {/* Feature 1 */}
+
+        {/* ye hai rich text editor wala feature */}
         <div className="grid md:grid-cols-2 gap-12 ">
+
           <div className="space-y-6">
             <div className="h-12 w-12 bg-orange-100 rounded-full flex items-center justify-center">
+
+              {/* ye hai FileText ek icon hai joki hamne lucid react library se import kiya hai... */}
+              {/* ye basically ek file wala icon hai joki hamne use kiya hai... */}
               <FileText className="h-6 w-6 text-orange-600" />
             </div>
+
+            {/* ye hai rich text editor wala title */}
             <h3 className="text-2xl font-bold text-orange-900">
               Rich Text Editor
             </h3>
+
+            {/* ye hai rich text editor wala description */}
             <p className="text-lg text-orange-700">
               Express yourself fully with our powerful editor featuring:
             </p>
+
+            {/* ye hai rich text editor wala list */}
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
                 <div className="h-2 w-2 rounded-full bg-orange-400" />
@@ -260,15 +272,25 @@ export default async function LandingPage() {
                 <div className="h-2 w-2 rounded-full bg-orange-400" />
                 <span>Embed links</span>
               </li>
+
+              {/* ye hai rich text editor wala list */}
             </ul>
           </div>
+
+          {/* ye hai rich text editor wala preview */}
           <div className="space-y-4 bg-white rounded-2xl shadow-xl p-6 border border-orange-100">
             {/* Editor Preview */}
+
+            {/* ye hai rich text editor wala preview */}
             <div className="flex gap-2 mb-6">
+
+              {/* ye hai rich text editor wala preview */}
               <div className="h-8 w-8 rounded bg-orange-100"></div>
               <div className="h-8 w-8 rounded bg-orange-100"></div>
               <div className="h-8 w-8 rounded bg-orange-100"></div>
             </div>
+
+            {/* ye hai rich text editor wala preview */}
             <div className="h-4 bg-orange-50 rounded w-3/4"></div>
             <div className="h-4 bg-orange-50 rounded w-full"></div>
             <div className="h-4 bg-orange-50 rounded w-2/3"></div>
@@ -313,14 +335,19 @@ export default async function LandingPage() {
 
       {/* Testimonials Carousel */}
       <TestimonialCarousel />
+      {/* ye hai testimonial carousel wala component joki hamne import kiya hai... */}
 
       {/* FAQ Section */}
       <div className="mt-24">
         <h2 className="text-3xl font-bold text-center text-orange-900 mb-12">
           Frequently Asked Questions
         </h2>
+
+        {/* ye hai accordion wala component joki hamne import kiya hai... */}
         <Accordion type="single" collapsible className="w-full mx-auto">
           {faqs.map((faq, index) => (
+
+            //ye basically hamne map ka use kiya hai traverse karne k liye
             <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger className="text-orange-900 text-lg">
                 {faq.q}
@@ -344,6 +371,10 @@ export default async function LandingPage() {
               Join thousands of writers who have already discovered the power of
               digital journaling.
             </p>
+
+            {/* ye hai button wala component joki hamne import kiya hai... */}
+            {/* ye basically ek button hai joki hamne use kiya hai... */}
+            
             <Button size="lg" variant="journal" className="animate-bounce">
               Get Started for Free <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
