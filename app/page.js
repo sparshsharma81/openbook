@@ -109,7 +109,7 @@ export default async function LandingPage() {
 
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl gradient-title mb-6">
-          Your Space to Reflect. <br /> Your Story to Tell.
+          Your Space to SnapBook <br /> Your Story to Tell.
           {/* text-5xl, md:text-7xl, lg:text-8xl: responsive heading sizes. */}
 
 {/* gradient-title: custom class defined in your CSS to apply a gradient to the text. */}
