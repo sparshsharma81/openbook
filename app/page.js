@@ -108,7 +108,9 @@ export default async function LandingPage() {
 {/* space-y-8: vertical spacing (32px) between child elements inside. */}
 
 
-        <h1 className="text-5xl md:text-7xl lg:text-8xl gradient-title mb-6">
+        <h1
+          className="text-5xl md:text-7xl lg:text-8xl font-extrabold bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-400 bg-clip-text text-transparent mb-6 drop-shadow-lg tracking-tight"
+        >
           Your Space to SnapBook <br /> Your Story to Tell.
           {/* text-5xl, md:text-7xl, lg:text-8xl: responsive heading sizes. */}
 
