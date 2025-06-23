@@ -47,7 +47,8 @@ import testimonials from "@/data/testimonials";
 const TestimonialCarousel = () => {
   return (
     <div className="mt-24">
-      <h2 className="text-3xl font-bold text-center text-orange-900 mb-12">
+           <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent mb-12">
+
         What Our Writers Say
       </h2>
       <Carousel
