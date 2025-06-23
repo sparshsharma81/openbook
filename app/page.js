@@ -366,22 +366,20 @@ export default async function LandingPage() {
 
 
       {/* CTA Section */}
-      <div className="mt-24">
-            <Card className="bg-gradient-to-r from-red-200 to-black-100">
-          <CardContent className="p-12 text-center">
-            <h2 className="text-3xl font-bold text-orange-900 mb-6">
+     <div className="mt-24">
+        <Card className="bg-gradient-to-r from-orange-200 via-pink-200 to-orange-100 shadow-2xl border-0 rounded-2xl overflow-hidden">
+          <CardContent className="p-14 md:p-16 text-center bg-white/70 backdrop-blur-xl rounded-2xl">
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-300 via-pink-400 to-orange-300 bg-clip-text text-transparent">
               Start Reflct-ing on Your Journey Today
             </h2>
-            <p className="text-lg text-orange-700 mb-8 max-w-2xl mx-auto">
-              Join thousands of writers who have already discovered the power of
-              digital journaling.
+            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto font-medium">
+              Join thousands of writers who have already discovered the power of digital journaling.
             </p>
-
-            {/* ye hai button wala component joki hamne import kiya hai... */}
-            {/* ye basically ek button hai joki hamne use kiya hai... */}
-            
-            <Button size="lg" variant="journal" className="animate-bounce">
-              Get Started for Free <ChevronRight className="ml-2 h-4 w-4" />
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-purple-600 via-yellow-500 to-orange-400 text-white font-bold px-10 py-5 rounded-full shadow-lg hover:from-purple-700 hover:to-orange-500 hover:scale-105 transition-all duration-300 animate-bounce"
+            >
+              Get Started for Free <ChevronRight className="ml-2 h-5 w-5" />
             </Button>
           </CardContent>
         </Card>
