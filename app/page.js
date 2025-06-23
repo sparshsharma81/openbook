@@ -229,7 +229,7 @@ export default async function LandingPage() {
               <div className="h-12 w-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
                 <feature.icon className="h-6 w-6 text-orange-600" />
               </div>
-              <h3 className="font-semibold text-xl text-orange-900 mb-2">
+              <h3 className="font-semibold text-xl text-pink-600 mb-2">
                 {feature.title}
               </h3>
               <p className="text-orange-700">{feature.description}</p>
