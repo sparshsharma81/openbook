@@ -367,7 +367,7 @@ export default async function LandingPage() {
 
       {/* CTA Section */}
       <div className="mt-24">
-            <Card className="bg-gradient-to-r from-red-100 to-black-100">
+            <Card className="bg-gradient-to-r from-red-200 to-black-100">
           <CardContent className="p-12 text-center">
             <h2 className="text-3xl font-bold text-orange-900 mb-6">
               Start Reflct-ing on Your Journey Today
