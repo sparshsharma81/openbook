@@ -337,28 +337,33 @@ export default async function LandingPage() {
       <TestimonialCarousel />
       {/* ye hai testimonial carousel wala component joki hamne import kiya hai... */}
 
-      {/* FAQ Section */}
-      <div className="mt-24">
-        <h2 className="text-3xl font-bold text-center text-orange-900 mb-12">
-          Frequently Asked Questions
-        </h2>
-
-        {/* ye hai accordion wala component joki hamne import kiya hai... */}
-        <Accordion type="single" collapsible className="w-full mx-auto">
-          {faqs.map((faq, index) => (
-
-            //ye basically hamne map ka use kiya hai traverse karne k liye
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="text-orange-900 text-lg">
-                {faq.q}
-              </AccordionTrigger>
-              <AccordionContent className="text-orange-700">
-                {faq.a}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+     {/* FAQ Section */}
+      <div className="mt-24 relative">
+        {/* Gradient background blob */}
+        <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[80vw] h-[40vh] bg-gradient-to-r from-purple-100 via-pink-100 to-orange-100 rounded-3xl blur-2xl opacity-60 -z-10" />
+        <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-lg rounded-2xl shadow-2xl border border-white/30 p-10">
+          <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent mb-12">
+            Frequently Asked Questions
+          </h2>
+          <Accordion type="single" collapsible className="w-full mx-auto space-y-4">
+            {faqs.map((faq, index) => (
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className="bg-white/90 backdrop-blur-xl rounded-xl border border-orange-100 shadow-md transition-all duration-300 hover:shadow-lg"
+              >
+                <AccordionTrigger className="text-lg font-semibold text-orange-900 hover:text-purple-600 transition-colors px-6 py-4">
+                  {faq.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-orange-700 px-6 pb-4">
+                  {faq.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
       </div>
+
 
       {/* CTA Section */}
       <div className="mt-24">
