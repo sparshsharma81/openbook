@@ -217,22 +217,22 @@ export default async function LandingPage() {
 
       {/* ye hai feature cards wala section */}
       {/* Feature Cards */}
-      <section
+         <section
         id="features"
         className="mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-8"
       >
         {features.map((feature, index) => (
 
           //ye basically hamne map ka use kiya hai traverse karne k liye
-          <Card key={index} className="shadow-lg">
-            <CardContent className="p-6">
-              <div className="h-12 w-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+          <Card key={index} className="shadow-lg text-red-400 bg-gradient-to-r from-pink-100 to-black-600/20 border-red-500">
+            <CardContent className="p-6  ">
+              <div className="h-12 w-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
                 <feature.icon className="h-6 w-6 text-orange-600" />
               </div>
               <h3 className="font-semibold text-xl text-pink-600 mb-2">
                 {feature.title}
               </h3>
-              <p className="text-orange-700">{feature.description}</p>
+              <p className="text-yellow-800">{feature.description}</p>
             </CardContent>
           </Card>
         ))}
