@@ -231,7 +231,7 @@ export default function JournalEntryPage() {
                 <SelectTrigger className={errors.mood ? "border-red-500" : ""}>
                   <SelectValue placeholder="Select a mood..." />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="max-h-80 overflow-y-auto">
                   {Object.values(MOODS).map((mood) => (
                     <SelectItem key={mood.id} value={mood.id}>
                       <span className="flex items-center gap-2">
